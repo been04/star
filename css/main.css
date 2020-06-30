@@ -20,16 +20,19 @@
     position: relative;
     width: 100%;
     min-width: 1024px;
-    height: 50px;
-    background-color: slateblue;
+    background-color: rosybrown;
+}
+
+.popup img{
+    width: 100%;
 }
 
 .popup button{
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 10px;
-    right: 200px;
+    top: 50px;
+    right: 300px;
     background: none;
     border: 1px solid white;
     color: white;
@@ -146,7 +149,7 @@
 
 /******************section2******************/
 #section2{
-
+    margin-top: 200px;
 }
 
 #section2 .inner{
@@ -242,6 +245,7 @@
     box-sizing: border-box;
 }
 
+
 #section2 .content li > a::after{
     content: "";
     position: absolute;
@@ -254,10 +258,12 @@
 }
 
 
+
+
 /******************section3******************/
 #section3{
     clear: both;
-    padding-top: 100px;
+    padding-top: 200px;
     width: 100%;
 }
 
@@ -267,10 +273,30 @@
 }
 
 #section3 .content li{
+    position: relative;
     width: calc((100% - 20px) / 2);
-    height: 350px;
+    height: auto;
     background-color: thistle;
     float: left;
+}
+
+#section3 .content li a:hover p{
+    display: block;
+}
+
+#section3 .content li img{
+    width: 100%;
+}
+
+#section3 .content li a p{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: rgba(256, 256, 256, 0.5);
+    line-height: 25px;
 }
 
 #section3 .title{
@@ -281,9 +307,87 @@
     margin-bottom: ;
 }
 
-#section3 .content li:last-child{
+#section3 .content li:nth-child(2n){
     margin-left: 20px;
 }
+
+
+
+
+
+
+/******************section4******************/
+#section4{
+    margin-top: 200px;
+}
+
+#section4 .inner{
+    position: relative;
+}
+
+#section4 .title h2{
+    float: left;
+    margin-bottom: 30px;
+}
+
+#section4 .title .arrow{
+    float: right;
+}
+
+#section4 .title .arrow li{
+    float: left;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-weight: 800;
+}
+
+#section4 .sec4_title{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: -9999;
+    width: 31%;
+}
+
+#section4 .sec4_title img{
+    width: 100%;
+}
+
+#section4 .review{
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    clear: both;
+    width: 65%;
+    margin-left: 5%;
+}
+
+#section4 .review li{
+    float: left;
+    width: calc((100% - 60px) / 3);
+    margin-left: 20px;
+}
+
+#section4 .review div{
+    margin-top: 20px;
+}
+
+#section4 .review div img{
+    width: 100%;
+}
+
+
+/******************section5******************/
+#section5{
+    clear: both;
+    padding-top: 800px;
+}
+
+
+
+
+
+
 
 
 
@@ -301,7 +405,7 @@
     width: 50px;
     height: 50px;
     border: 0;
-    background-color: gray;
+    background-color: red;
     border-radius: 50%;
     cursor: pointer;
     display: block;
